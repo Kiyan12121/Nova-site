@@ -1,31 +1,54 @@
+/* Reset default browser margin */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #121212;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
 }
 
+/* Header styling */
+header {
+  padding: 50px 0;
+}
+
+/* Main title styling */
 h1 {
-    font-size: 3rem;
-    margin-top: 50px;
+  font-size: 3rem;
+  margin: 0;
 }
 
-.buttons {
-    margin-top: 20px;
+/* Container for the buttons */
+.button-container {
+  margin: 30px 0;
 }
 
-.button {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    background-color: black;
-    border: 2px solid green;
-    color: green;
-    text-decoration: none;
-    font-size: 1.2rem;
+/* Base button styles */
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 15px 30px;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.button:hover {
-    background-color: green;
-    color: black;
+/* Hover effect */
+.btn:hover {
+  background-color: #00ff00;
+  color: #121212;
+}
+
+/* Disabled button styling */
+.btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Footer styling */
+footer {
+  padding: 20px 0;
+  font-size: 0.8rem;
 }
