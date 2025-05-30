@@ -1,54 +1,55 @@
-/* Reset default browser margin */
+/* Import futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #fff;
-  text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Header styling */
-header {
-  padding: 50px 0;
-}
-
-/* Main title styling */
+/* Title styling */
 h1 {
-  font-size: 3rem;
-  margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-/* Container for the buttons */
+/* Button container */
 .button-container {
-  margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
 }
 
-/* Base button styles */
+/* Neon button style */
 .btn {
-  display: inline-block;
-  margin: 0 10px;
-  padding: 15px 30px;
-  border: 2px solid #00ff00;
-  color: #00ff00;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Hover effect */
 .btn:hover {
-  background-color: #00ff00;
-  color: #121212;
+    background-color: #00ff00;
+    color: #121212;
+    box-shadow: 0 0 10px #00ff00;
 }
 
-/* Disabled button styling */
-.btn.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-/* Footer styling */
+/* Footer */
 footer {
-  padding: 20px 0;
-  font-size: 0.8rem;
+    font-size: 0.8rem;
+    margin-top: 50px;
 }
